@@ -1,0 +1,13 @@
+console.log('Hello, world!');
+
+function repeater(char) {
+  /*
+  base case: if char's length >= 5, return char
+  return repeater with char's first element added to char
+  */
+  return (char.length >= 5 ? char : repeater(char += char[0]));
+}
+
+// To check if you've completed the challenge, uncomment these console.logs!
+console.log(repeater('g'));
+console.log(repeater('j'));
